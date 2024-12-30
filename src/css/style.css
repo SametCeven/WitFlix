@@ -1,0 +1,50 @@
+/* {
+    border: 1px solid red;
+}
+*/
+.wrapper {
+    max-width: 1000px;
+    margin:0 auto;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin-right: 4rem;
+    gap: 8rem;
+    height:6rem;
+    border-bottom: 1px solid gray;
+}
+.logo {
+    width:10rem;
+}
+header .search {
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+.search .search-bar {
+    display: flex;
+    align-items: center;
+    border:1px solid gray;
+}
+.search-bar input {
+    width:6rem;
+    height:1.2rem;
+    border:none;
+}
+.bell{
+    font-size: 1.2rem;
+}
+.profile {
+    width:2rem;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+main {
+    margin-top: 1rem;
+}
