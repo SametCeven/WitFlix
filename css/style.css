@@ -1,0 +1,11 @@
+* {
+    border: 1px solid red;
+}
+
+.profile {
+    width:5rem;
+}
+
+.bell{
+    font-size: 50px;
+}
