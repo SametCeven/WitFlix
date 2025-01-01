@@ -1,11 +1,10 @@
-/* {
-    border: 1px solid red;
+body {
+    font-family: Roboto, Afacad Flux, Noto Sans, Inter, Montserrat;
+    background-color: black;
 }
-*/
 .wrapper {
     max-width: 1000px;
     margin:0 auto;
-    font-family: Roboto, Afacad Flux, Noto Sans, Inter, Montserrat;
 }
 header {
     display: flex;
@@ -26,7 +25,7 @@ header {
 }
 header nav a{
     text-decoration: none;
-    color:#373030;
+    color:white;
     padding: 10px;
     font-size: 0.8rem;
 }
@@ -39,28 +38,28 @@ header .search {
 .search-bar input {
     width:6rem;
     height:1.2rem;
-    color:dimgray;
+    color:white;
 }
 .search-bar i {
     width:6rem;
     height:1.2rem;
-    color:dimgray;
+    color:white;
     position: absolute;
     left:4.8rem;
     top:0.1rem;
 }
-.search-bar .bell{
+.bell{
     font-size: 1.2rem;
-    color:dimgray;
+    color:white;
 }
 .profile {
     width:2rem;
     height: auto;
     aspect-ratio: 1/1;
     object-fit: cover;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 50%;
-    border-color: gray;
+    border-color: white;
 }
  .hero-content {
     display: flex;
@@ -136,6 +135,8 @@ section {
 }
 .suggestion-title {
     font-weight: bold;
+    color:white;
+    font-size: 1.5rem;
 }
 .suggestion-item-content {
     display: flex;
@@ -170,6 +171,7 @@ footer {
     margin: 2rem 1.5rem;
     margin-top: 5rem;
     font-size: 0.7rem;
+    color:white;
 }
 .footer-head {
     margin-bottom: 1rem;
@@ -182,7 +184,7 @@ footer {
 }
 .footer-head a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .footer-social {
     display: flex;
