@@ -5,6 +5,7 @@
 .wrapper {
     max-width: 1000px;
     margin:0 auto;
+    font-family: Roboto, Afacad Flux, Noto Sans, Inter, Montserrat;
 }
 header {
     display: flex;
@@ -162,4 +163,46 @@ section {
     border: 1px solid black;
     padding:0.4rem;
     border-radius: 0.3rem;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 1.5rem;
+    margin-top: 5rem;
+    font-size: 0.7rem;
+}
+.footer-head {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+.footer-head-aw {
+    width: 18rem;
+}
+.footer-head a{
+    text-decoration: none;
+    color: black;
+}
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    width: 5rem;
+}
+.fa-brands{
+    font-size: 1.2rem;
+}
+.fa-facebook{
+    color:#4267B2
+}
+.fa-youtube {
+    color:#FF0000
+}
+.fa-twitter {
+    color:#1DA1F2
+}
+.footer-apps {
+    display: flex;
+    justify-content: space-between;
+    width: 3rem;
 }
