@@ -6,6 +6,8 @@ body {
     max-width: 1000px;
     margin:0 auto;
 }
+
+/* HEADER */
 header {
     display: flex;
     justify-content: space-around;
@@ -61,6 +63,8 @@ header .search {
     border-radius: 50%;
     border-color: white;
 }
+
+/* MAIN */
  .hero-content {
     display: flex;
     flex-direction: column;
@@ -97,6 +101,9 @@ header .search {
     border: 2px solid black;
     padding:0 10px;
     border-radius: 3px;
+    font-size:0.8rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
 }
 .duration {
     font-weight: bold;
@@ -118,6 +125,8 @@ header .search {
     padding:0.7rem;
     border-radius: 0.5rem;
 }
+
+/* SECTION */
 section {
     display:flex;
     flex-direction: column;
@@ -165,6 +174,8 @@ section {
     padding:0.4rem;
     border-radius: 0.3rem;
 }
+
+/* FOOTER */
 footer {
     display: flex;
     justify-content: space-between;
@@ -207,4 +218,37 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 3rem;
+}
+
+
+/* MOBILE */
+@media(max-width:450px){
+    header {
+        height: 5rem;
+        position:relative;
+        padding-bottom: 1rem;
+    }
+    header nav{
+        position:absolute;
+        bottom:5%;
+        font-size:0.4rem;
+    }
+    header .logo {
+        width:5rem;
+    }
+    .suggestion-item-hid {
+        display:none;
+    }
+    .hero-content {
+        margin: 1rem 0.3rem;
+        background-position: center;
+    }
+    section {
+        margin: 2rem 0.3rem;
+    }
+    footer {
+        margin: 2rem 0.3rem;
+        flex-direction: column;
+        row-gap:2.5rem;
+    }
 }
