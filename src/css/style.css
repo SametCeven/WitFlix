@@ -93,12 +93,12 @@ header .search {
 .user-ratings .imdb {
     color:gainsboro;
 }
-.movie-info .maturity-rating {
+.maturity-rating {
     border: 2px solid black;
     padding:0 10px;
     border-radius: 3px;
 }
-.movie-info .duration {
+.duration {
     font-weight: bold;
 }
 .movie-details {
@@ -118,4 +118,48 @@ header .search {
     padding:0.7rem;
     border-radius: 0.5rem;
 }
-
+section {
+    display:flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin: 2rem 1.5rem;
+}
+.suggestions-row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.suggestions-row .suggestion-content{
+    display: flex;
+    justify-content: space-between;
+}
+.suggestion-title {
+    font-weight: bold;
+}
+.suggestion-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+    padding: 1rem;
+    background-color: #373030;
+    color:white;
+    width: 15rem;
+    height: 10rem;
+    font-size: 0.8rem;
+}
+.suggestion-item-content h3 {
+    font-size: 2rem;
+}
+.suggestion-item-content .suggestion-details {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.btn-md {
+    background-color: #CC0000;
+    color:white;
+    border: 1px solid black;
+    padding:0.4rem;
+    border-radius: 0.3rem;
+}
