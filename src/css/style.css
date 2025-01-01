@@ -11,31 +11,46 @@ header {
     justify-content: space-around;
     align-content: center;
     align-items: center;
-    margin-right: 4rem;
+    margin-right: 1rem;
     gap: 8rem;
     height:6rem;
     border-bottom: 1px solid gray;
 }
+.header-flex {
+    display: flex;
+    align-items: center;
+}
 .logo {
     width:10rem;
 }
+header nav a{
+    text-decoration: none;
+    color:#373030;
+    padding: 10px;
+    font-size: 0.8rem;
+}
 header .search {
-    display: flex;
-    align-items: center;
     gap:1rem;
 }
 .search .search-bar {
-    display: flex;
-    align-items: center;
-    border:1px solid gray;
+    position: relative;
 }
 .search-bar input {
     width:6rem;
     height:1.2rem;
-    border:none;
+    color:dimgray;
 }
-.bell{
+.search-bar i {
+    width:6rem;
+    height:1.2rem;
+    color:dimgray;
+    position: absolute;
+    left:4.8rem;
+    top:0.1rem;
+}
+.search-bar .bell{
     font-size: 1.2rem;
+    color:dimgray;
 }
 .profile {
     width:2rem;
@@ -44,7 +59,63 @@ header .search {
     object-fit: cover;
     border: 1px solid black;
     border-radius: 50%;
+    border-color: gray;
 }
-main {
-    margin-top: 1rem;
+ .hero-content {
+    display: flex;
+    flex-direction: column;
+    row-gap:2rem;
+    margin: 1rem 1.5rem;
+    padding:1.5rem;
+    color:white;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/521dec4de4b0912f523f3b56/1636288167116-W44IFJZKNMKSQOC9QBN5/dune-poster.jpg?format=2500w");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.hero-content h1 {
+    font-size: 3rem;
+}
+.hero-content .movie-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.hero-content .user-ratings {
+    display: flex;
+    gap: 0.5rem;
+}
+.user-ratings .user-rating{
+    color:#CC0000;
+}
+.user-ratings .imdb-rating {
+    font-weight: bold;
+}
+.user-ratings .imdb {
+    color:gainsboro;
+}
+.movie-info .maturity-rating {
+    border: 2px solid black;
+    padding:0 10px;
+    border-radius: 3px;
+}
+.movie-info .duration {
+    font-weight: bold;
+}
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+.movie-details span{
+    color:#CC0000;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+.btn-lg {
+    background-color: #CC0000;
+    color:white;
+    border: 1px solid black;
+    padding:0.7rem;
+    border-radius: 0.5rem;
+}
+
