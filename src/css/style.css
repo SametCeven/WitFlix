@@ -89,7 +89,7 @@ header .search {
     gap: 0.5rem;
 }
 .user-ratings .user-rating{
-    color:#CC0000;
+    color:#FF0000;
 }
 .user-ratings .imdb-rating {
     font-weight: bold;
@@ -114,12 +114,12 @@ header .search {
     row-gap: 0.5rem;
 }
 .movie-details span{
-    color:#CC0000;
+    color:#FF0000;
     font-weight: 600;
     margin-right: 1rem;
 }
 .btn-lg {
-    background-color: #CC0000;
+    background-color: #FF0000;
     color:white;
     border: 1px solid black;
     padding:0.7rem;
@@ -153,7 +153,7 @@ section {
     justify-content: center;
     row-gap: 2rem;
     padding: 1rem;
-    background-color: #373030;
+    background-color: #7F7F7F;
     color:white;
     width: 15rem;
     height: 10rem;
@@ -168,7 +168,7 @@ section {
     align-items: center;
 }
 .btn-md {
-    background-color: #CC0000;
+    background-color: #FF0000;
     color:white;
     border: 1px solid black;
     padding:0.4rem;
@@ -250,5 +250,8 @@ footer {
         margin: 2rem 0.3rem;
         flex-direction: column;
         row-gap:2.5rem;
+    }
+    .suggestion-item-content {
+        width: 20rem;
     }
 }
