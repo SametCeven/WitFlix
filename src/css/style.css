@@ -38,20 +38,22 @@ header .search {
     position: relative;
 }
 .search-bar input {
-    width:6rem;
-    height:1.2rem;
+    width:8rem;
+    height:2rem;
     color:white;
+    border: none;
+    background-color: black;
 }
 .search-bar i {
     width:6rem;
     height:1.2rem;
     color:white;
     position: absolute;
-    left:4.8rem;
-    top:0.1rem;
+    left:7rem;
+    top:0.5rem;
 }
 .bell{
-    font-size: 1.2rem;
+    font-size: 1rem;
     color:white;
 }
 .profile {
@@ -65,21 +67,30 @@ header .search {
 }
 
 /* MAIN */
- .hero-content {
+.hero-content {
+    position:relative;
+    margin:1rem 1.5rem;
+}
+.hero-content img {
+    position:absolute;
+    filter: brightness(50%);
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-content .movie-big {
+    position: relative;
+    color:white;
     display: flex;
     flex-direction: column;
     row-gap:2rem;
     margin: 1rem 1.5rem;
     padding:1.5rem;
-    color:white;
-    background-image: url("https://images.squarespace-cdn.com/content/v1/521dec4de4b0912f523f3b56/1636288167116-W44IFJZKNMKSQOC9QBN5/dune-poster.jpg?format=2500w");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .hero-content h1 {
     font-size: 3rem;
 }
-.hero-content .movie-info {
+.movie-big .movie-info {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -121,9 +132,9 @@ header .search {
 .btn-lg {
     background-color: #FF0000;
     color:white;
-    border: 1px solid black;
+    border: 1px solid gray;
     padding:0.7rem;
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
 }
 
 /* SECTION */
@@ -137,6 +148,18 @@ section {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
+}
+.suggestions-row .suggestion-title {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.suggestion-title a {
+    font-size:0.8rem;
+    text-decoration: none;
+    color:white;
+    font-weight: 400;
 }
 .suggestions-row .suggestion-content{
     display: flex;
@@ -170,9 +193,9 @@ section {
 .btn-md {
     background-color: #FF0000;
     color:white;
-    border: 1px solid black;
+    border: 1px solid gray;
     padding:0.4rem;
-    border-radius: 0.3rem;
+    border-radius: 1.5rem;
 }
 
 /* FOOTER */
@@ -222,7 +245,10 @@ footer {
 
 
 /* MOBILE */
-@media(max-width:450px){
+@media(max-width:900px){
+    .wrapper {
+        max-width: 400px;
+    }
     header {
         height: 5rem;
         position:relative;
@@ -234,10 +260,13 @@ footer {
         font-size:0.4rem;
     }
     header .logo {
-        width:5rem;
+        width:4rem;
     }
     .suggestion-item-hid {
         display:none;
+    }
+    .suggestion-item-content {
+        width: 8rem;
     }
     .hero-content {
         margin: 1rem 0.3rem;
@@ -246,12 +275,19 @@ footer {
     section {
         margin: 2rem 0.3rem;
     }
-    footer {
-        margin: 2rem 0.3rem;
-        flex-direction: column;
-        row-gap:2.5rem;
+    .movie-info {
+        flex-wrap:wrap;
     }
     .suggestion-item-content {
-        width: 20rem;
+        width:17rem;
     }
+    footer {
+        margin: 2rem 0.3rem;
+        row-gap:2.5rem;
+        flex-wrap: wrap;
+    }
+    footer .footer-head-aw{
+        width: 90vw;
+    }
+    
 }
